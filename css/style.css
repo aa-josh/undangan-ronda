@@ -24,19 +24,6 @@ body {
   font-family: "Tangerine", cursive;
   font-size: 9rem;
   text-shadow: var(--shadow);
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #816a01, 0 0 30px #816a01,
-      0 0 40px #816a01, 0 0 50px #816a01, 0 0 60px #816a01, 0 0 70px #816a01;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #e7bd03, 0 0 40px #e7bd03,
-      0 0 50px #e7bd03, 0 0 60px #e7bd03, 0 0 70px #e7bd03, 0 0 80px #e7bd03;
-  }
 }
 
 .hero h4 {
