@@ -18,6 +18,12 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="simplyCountdown.js-master/simplyCountdown.theme.default.css"
+    />
+    <script src="simplyCountdown.js-master/simplyCountdown.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -30,6 +36,7 @@
         <h4>akan berulang tahun</h4>
         <p>Dengan tidak mengurangi rasa hormat,</p>
         <p>Kami mengundang Bapak/Ibu/Saudara/i, dalam :</p>
+        <div class="simply-countdown"></div>
         <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
       </main>
     </section>
@@ -39,5 +46,21 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 12, // required
+        day: 27, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
   </body>
 </html>

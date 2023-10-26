@@ -40,14 +40,54 @@ body {
 }
 
 .hero h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .hero a {
   color: var(--blue);
   background-color: white;
+  margin-top: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 5px;
+  }
+}
+/* hp */
+@media (max-width: 567px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 30px;
+    margin: 3px;
+  }
 }
