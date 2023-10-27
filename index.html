@@ -28,17 +28,126 @@
   </head>
   <body>
     <section
-      id="home"
+      id="hero"
       class="hero w-100 h-100 p-2 mx-auto text-center d-flex justify-content-center align-items-center"
     >
       <main>
         <h1>ayah Josh</h1>
         <h4>akan berulang tahun</h4>
         <p>Dengan tidak mengurangi rasa hormat,</p>
-        <p>Kami mengundang Bapak/Ibu/Saudara/i, dalam :</p>
+        <p>Kami mengundang Bapak/Ibu/Saudara/i,</p>
+        <p>dalam :</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg">Lihat Selengkapnya</a>
       </main>
+    </section>
+
+    <nav
+      class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">ayah Josh</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ayah Josh</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galery">Galeri</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col md-8 text-center">
+            <h2>Acara Ulang Tahun</h2>
+            <h3>
+              Akan diselenggarakan pada tanggal 27 Desember 2023 di Bandung,
+              Jawa Barat.
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, saya mengundang
+              Bapak/Ibu/Saudara/i,
+            </p>
+            <p>Untuk hadir dalam acara ulang tahun saya.</p>
+          </div>
+        </div>
+
+        <!-- couple -->
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>ayah Josh</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Veritatis, architecto?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/profil.jpg"
+                  alt="ayah Josh"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/profil2.jpeg"
+                  alt="ayah Josh"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>ayah Josh</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Veritatis, architecto?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#info" class="btn btn-lg">Lihat Selanjutnya</a>
     </section>
 
     <script
@@ -60,6 +169,20 @@
           minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
+      });
+    </script>
+
+    <script>
+      const hamburger = document.querySelector(".navbar-toggler");
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
