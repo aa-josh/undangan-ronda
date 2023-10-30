@@ -375,9 +375,10 @@ body {
     height: 70px;
   }
 
-  .story a {
-    top: 293%;
-    left: 17rem;
+  .home a,
+  .story a,
+  .galery a {
+    display: none;
   }
 
   .galery span {
