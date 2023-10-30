@@ -11,30 +11,31 @@ body {
   min-height: 2000px;
 }
 
-.hero {
+.home {
   min-height: 100vh;
   background-color: var(--bg);
   background-image: url(../img/bg6.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.hero h1 {
+.home h1 {
   font-family: "Work Sans";
   font-size: 2.7rem;
   color: white;
   text-shadow: var(--shadow);
 }
 
-.hero h4 {
+.home h4 {
   font-family: "Tangerine";
   font-size: 8rem;
   margin-bottom: 1rem;
   text-shadow: var(--shadow);
 }
 
-.hero p {
+.home p {
   margin: 0 20%;
   font-family: "Edu TAS Beginner";
   color: white;
@@ -44,24 +45,24 @@ body {
   text-shadow: var(--shadow);
 }
 
-.hero h5 {
+.home h5 {
   font-size: 2.3rem;
   font-family: "Work Sans";
   color: white;
   text-shadow: var(--shadow);
 }
 
-.hero a {
+.home a {
   position: absolute;
-  top: 90%;
-  right: 7%;
+  top: 92%;
+  left: 45%;
   padding: 0.2rem 0.5rem;
   color: white;
   background-color: var(--blue);
   transition: none;
 }
 
-.hero a:hover {
+.home a:hover {
   color: white;
   background-color: #b108c0;
   box-shadow: var(--shadow);
@@ -91,7 +92,7 @@ body {
   text-transform: uppercase;
 }
 
-.home {
+.info {
   color: black;
   background-color: rgb(236, 232, 232);
   background-image: url(../img/bg8.png);
@@ -99,11 +100,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  margin-top: -4.5rem;
+  margin-top: -4rem;
   padding-top: 4rem;
 }
 
-.home h2,
+.info h2,
 .story h2 {
   color: var(--blue);
   font-family: "Tangerine";
@@ -112,41 +113,41 @@ body {
   margin-top: 0.1rem;
 }
 
-.home h3 {
+.info h3 {
   color: rgb(41, 1, 41);
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 0.7rem;
-  margin-top: 0.3rem;
+  margin-top: -0.5rem;
   text-shadow: 0 2px 2px rgba(119, 2, 109, 0.8);
 }
 
-.home p {
+.info p {
   font-family: "Edu TAS Beginner";
   font-size: 1.5rem;
   color: rgb(5, 1, 61);
   font-weight: 200;
-  line-height: 1.3rem;
-  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  margin-top: -0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.home .couple {
-  margin-top: 40px;
+.info .couple {
+  margin-top: 28px;
 }
 
-.home .couple h3 {
+.info .couple h3 {
   font-family: "tangerine";
   font-size: 3rem;
   color: var(--blue);
   margin-top: 3px;
 }
 
-.home .couple img {
+.info .couple img {
   width: 100%;
 }
 
-.home .akad h5 {
+.info .akad h5 {
   text-align: center;
   font-family: "Tangerine";
   font-size: 2.5rem;
@@ -156,7 +157,7 @@ body {
   margin-top: -1rem;
 }
 
-.home .akad p {
+.info .akad p {
   text-align: center;
   font-size: 1.3rem;
   line-height: 0.7rem;
@@ -164,10 +165,10 @@ body {
   margin-top: 1rem;
 }
 
-.home a {
+.info a {
   position: absolute;
   top: 193%;
-  right: 7%;
+  left: 45%;
   color: white;
   background-color: var(--blue);
   font-size: 1rem;
@@ -176,7 +177,7 @@ body {
   transition: none;
 }
 
-.home a:hover {
+.info a:hover {
   color: white;
   background-color: #b108c0;
   box-shadow: var(--shadow);
@@ -305,8 +306,8 @@ body {
 .story a {
   position: absolute;
   display: inline-block;
-  top: 320%;
-  left: 10%;
+  top: 325%;
+  left: 45%;
   color: white;
   background-color: var(--blue);
   font-size: 1rem;
@@ -322,87 +323,81 @@ body {
 }
 
 /* media query */
-/* laptop */
-@media (max-width: 992px) {
+@media (max-width: 320px) {
   html {
-    font-size: 75%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 70px;
-  }
-}
-/* tablet */
-@media (max-width: 768px) {
-  html {
-    font-size: 65%;
+    font-size: 54%;
   }
 
-  .simply-countdown > .simply-section {
-    padding: 40px;
-    margin: 5px;
+  .home h1 {
+    margin-top: -2.5rem;
   }
 
-  .navbar .nav-link {
-    font-size: 2rem;
-    text-align: center;
+  .home h4 {
+    padding: 0.3rem 10% 0.3rem;
   }
 
-  .sticky-top {
-    overflow: hidden;
-  }
-
-  .timeline li .timeline-image {
-    width: 75px;
-    height: 75px;
-    top: -2%;
-  }
-
-  .story a {
+  .home h4 span {
+    color: var(--blue);
     position: absolute;
-    display: inline-block;
-    top: 290%;
-  }
-}
-/* hp */
-@media (max-width: 430px) {
-  html {
-    font-size: 50%;
+    top: 23%;
+    left: 65%;
+    text-align: center;
+    font-size: 8rem;
   }
 
   .simply-countdown > .simply-section {
-    padding: 30px;
-    margin-top: 3rem;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    margin: 4px;
   }
 
-  .hero {
-    min-height: 100vh;
-    background-color: var(--bg);
-    background-image: url(../img/bg9.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .hero a {
-    margin-top: 4rem;
-  }
-
-  .mynavbar {
-    margin-left: 7rem;
-    margin-right: 7rem;
-  }
-
-  .home .couple {
-    margin-top: 40px;
-    margin-left: 7rem;
-    margin-right: 7rem;
+  .home h5 {
+    font-size: 1.5rem;
   }
 
   .home a {
-    top: 180%;
+    left: 38.5%;
+    padding: 0.2rem 0.5rem;
+  }
+  .mynavbar .offcanvas {
+    height: 100vh;
+    width: 18rem;
+  }
+  .mynavbar .navbar-brand {
+    font-family: "Tangerine", cursive;
+    text-align: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
-  .mynavbar .offcanvas {
-    width: 20rem;
+  .mynavbar .offcanvas-body {
+    font-size: 5rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .info,
+  .story {
+    padding: 5rem 8% 0.3rem;
+  }
+
+  .info .couple {
+    margin-top: 10px;
+  }
+
+  .info .akad h5 {
+    margin-top: 0.6rem;
+  }
+
+  .info .akad p {
+    line-height: 0.7rem;
+    margin-top: 0.5rem;
+  }
+  .info a {
+    top: 196%;
+    left: 40%;
   }
 }
