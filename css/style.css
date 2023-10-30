@@ -75,21 +75,11 @@ body {
   padding: 0;
 }
 
-.mynavbar .offcanvas {
-  height: 100vh;
-}
-
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
+.mynavbar .navbar-brand {
   font-family: "Tangerine", cursive;
   color: var(--blue);
   font-size: 2.5rem;
   font-weight: 700;
-}
-
-.navbar .nav-link {
-  font-size: 0.8rem;
-  text-transform: uppercase;
 }
 
 .info {
@@ -192,24 +182,21 @@ body {
   padding-top: 5.5rem;
 }
 
-.story h2,
-.galery h2 {
+.story h2 {
   color: var(--blue);
   font-family: "Tangerine";
   text-shadow: var(--shadow);
   margin-bottom: 0.1rem;
 }
 
-.story span,
-.galery span {
+.story span {
   color: var(--blue);
   font-size: 1.1rem;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.story p,
-.galery p {
+.story p {
   color: var(--blue);
   font-size: 1rem;
   padding-top: -1rem;
@@ -353,49 +340,60 @@ body {
   }
 
   .home a {
-    left: 39%;
+    left: 40%;
     padding: 0.2rem 0.5rem;
-  }
-  .mynavbar .offcanvas {
-    height: 100vh;
-    width: 18rem;
-  }
-  .mynavbar .navbar-brand {
-    font-family: "Tangerine", cursive;
-    text-align: center;
-    justify-content: center;
-    color: var(--blue);
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-
-  .mynavbar .offcanvas-body {
-    font-size: 5rem;
-    text-align: center;
-    justify-content: center;
   }
 
   .sticky-top {
     overflow: hidden;
   }
 
-  .info {
-    padding: 4rem 8% 0.3rem;
+  .info,
+  .galery {
+    padding: 4.5rem 8% 0.3rem;
   }
 
   .info .couple {
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .info .akad h5 {
-    margin-top: 0.6rem;
+    margin-top: 1rem;
   }
 
   .info .akad p {
-    line-height: 0.7rem;
-    margin-top: 0.5rem;
+    line-height: 1rem;
+    margin-top: 1rem;
   }
   .info a {
-    display: none;
+    top: 194%;
+    left: 17rem;
+  }
+
+  .timeline li .timeline-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .story a {
+    top: 293%;
+    left: 17rem;
+  }
+
+  .galery span {
+    color: var(--blue);
+    font-size: 1.3rem;
+  }
+
+  .galery h2 {
+    font-size: 5rem;
+    color: var(--blue);
+    font-family: "Tangerine";
+    text-shadow: var(--shadow);
+  }
+
+  .galery p {
+    color: var(--blue);
+    font-size: 1rem;
   }
 }
