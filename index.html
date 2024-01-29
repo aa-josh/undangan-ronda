@@ -1,363 +1,1104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-bs-theme="dark">
   <head>
+    <!-- Common Tag -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ultah</title>
+    <title>Undangan Online</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo josh 2.png" />
+
+    <!-- Preconnect and preload CDN -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      rel="dns-prefetch"
+      href="https://cdn.jsdelivr.net"
       crossorigin="anonymous"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="dns-prefetch"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://cdn.jsdelivr.net"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Sacramento&family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98="
+      crossorigin="anonymous"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+      integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o="
+      crossorigin="anonymous"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4="
+      crossorigin="anonymous"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0="
+      crossorigin="anonymous"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+      integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c="
+      crossorigin="anonymous"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
+      integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18="
+      crossorigin="anonymous"
+      as="script"
     />
 
+    <!-- Dependencies CSS -->
     <link
       rel="stylesheet"
-      href="simplyCountdown.js-master/simplyCountdown.theme.default.css"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
     />
-    <script src="simplyCountdown.js-master/simplyCountdown.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+      integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4="
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap"
+    />
+
+    <!-- App -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="./js/app.js" defer></script>
   </head>
-  <body>
-    <section
-      id="home"
-      class="home w-100 h-100 p-2 mx-auto text-center d-flex justify-content-center align-items-center"
-    >
-      <main>
-        <h1>the Wedding of</h1>
-        <h4>Ujang <span>&</span> Nyai</h4>
-        <p>
-          Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
-          pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
-          dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
-          kasih dan sayang.
-        </p>
-        <div class="simply-countdown"></div>
-        <h5>save the date</h5>
-        <a href="#info" class="btn">Buka Undangan</a>
-      </main>
-    </section>
 
+  <body>
+    <!-- Navbar Bottom -->
     <nav
-      class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">Ujang & Nyai</a>
-      </div>
+      class="navbar navbar-dark bg-black navbar-expand fixed-bottom rounded-top-4 p-0"
+      id="navbar-menus">
+      <ul class="navbar-nav nav-justified w-100 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">
+            <i class="fas fa-home"></i>
+            <span class="d-block" style="font-size: 0.7rem">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#utama">
+          <i class="fa-regular fa-newspaper"></i>
+            <span class="d-block" style="font-size: 0.7rem">Utama</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tanggal">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span class="d-block" style="font-size: 0.7rem">Tanggal</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galeri">
+            <i class="fa-solid fa-images"></i>
+            <span class="d-block" style="font-size: 0.7rem">Galeri</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sarana">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span class="d-block" style="font-size: 0.7rem">Penunjang</span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
-    <section id="info" class="info">
+    <!-- Main Content -->
+    <main
+      class="text-light"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-menus"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <!-- Home -->
+      <section class="container" id="utama">
+        <div class="text-center pt-4">
+          <h1 class="font-esthetic my-3" style="font-size: 2.5rem">
+            Undangan Ngaronda
+          </h1>
+
+          <div class="py-3">
+            <div class="mx-auto">
+              <img
+                src="./assets/images/Linmas_Logo.png"
+                alt="bg"
+                onclick="util.modal(this)" style="width: 230px;"
+              />
+            </div>
+          </div>
+
+          <h1 class="my-3" style="font-size: 2.3rem">
+            Untuk Semua Warga
+          </h1>
+          <p class="mb-0" style="font-size: 1.2rem">Nanti Malam</p>
+          <p class="mb-0" style="font-size: 1.1rem">Mulai Pukul : 21:00 WIB</p>
+
+          <a
+            class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2"
+            href="#home"
+          >
+            <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
+          </a>
+
+          <div
+            class="d-flex justify-content-center align-items-center mt-4 mb-2"
+          >
+            <div class="mouse-animation">
+              <div class="scroll-animation"></div>
+            </div>
+          </div>
+
+          <p class="m-0">Scroll Down</p>
+        </div>
+      </section>
+
+      <!-- Wave Separator -->
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#111111"
+          fill-opacity="1"
+          d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+      <!-- Mempelai -->
+      <section class="dark-section" id="mempelai">
+        <div class="text-center">
+          <h1 class="font-arabic py-4 px-2" style="font-size: 2rem">
+            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </h1>
+
+          <!-- Love animation -->
+          <!-- <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; right: 10%">
+              <svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="opacity-50"
+                onload="util.animate(this, 500, 'animate-love')"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </div>
+          </div> -->
+
+          <h1 class="font-esthetic py-4 px-2" style="font-size: 2rem">
+            Assalamualaikum Warahmatullahi Wabarakatuh
+          </h1>
+
+          <p class="pb-3 px-3">
+            Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+            serta masyarakat sekalian untuk melaksanakan kegiatan ronda bersama:
+          </p>
+
+          <!-- Love animation -->
+          <!-- <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; left: 10%">
+              <svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="opacity-50"
+                onload="util.animate(this, 2000, 'animate-love')"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </div>
+          </div> -->
+
+          <div class="overflow-x-hidden">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <div
+                class="img-crop my-4 mx-auto"
+              >
+                <img
+                  src="./assets/images/LOGORW5.png"
+                  alt="cowo"
+                  style="width: 180px;"
+                  onclick="util.modal(this)"
+                />
+              </div>
+              <h1 class="font-esthetic" style="font-size: 2.5rem">Pengurus Rw 05</h1>
+            </div>
+
+            <!-- Love animation -->
+            <!-- <div class="position-relative">
+              <div class="position-absolute" style="top: 0%; right: 10%">
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  class="opacity-50"
+                  onload="util.animate(this, 3000, 'animate-love')"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  />
+                </svg>
+              </div>
+            </div> -->
+
+            <h1 class="font-esthetic my-4" style="font-size: 4rem">&</h1>
+
+            <!-- Love animation -->
+            <!-- <div class="position-relative">
+              <div class="position-absolute" style="top: 0%; left: 10%">
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  class="opacity-50"
+                  onload="util.animate(this, 2000, 'animate-love')"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  />
+                </svg>
+              </div>
+            </div> -->
+
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <div
+                class="my-4 mx-auto"
+              >
+                <img
+                  src="./assets/images/Linmas_Logo.png"
+                  alt="cewe"
+                  onclick="util.modal(this)"
+                  style="width: 180px;"/>
+              </div>
+              <h1 class="font-esthetic" style="font-size: 2.5rem">Linmas Rw 05</h1>
+            </div>
+          </div>
+
+          <!-- Ballon animation -->
+          <!-- <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; right: 5%">
+              <svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="currentColor"
+                class="opacity-50"
+                onload="util.animate(this, 1500, 'animate-love')"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Wave Separator -->
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#111111"
+          fill-opacity="1"
+          d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
+
+      <!-- Firman Allah Subhanahu Wa Ta'ala -->
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col md-8 text-center">
-            <h2>Resepsi Pernikahan</h2>
-            <h3>
-              Akan dilaksanakan Pada hari Minggu, di Gelora Bandung Lautan Api
-            </h3>
-            <p>
-              Oleh karena itu, dengan segala hormat, kami mengundang
-              Bapak/Ibu/Saudara/i,
+        <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">
+          مَنْ أَصْبَحَ مِنْكُمْ آمِنًا فِيْ سِرْبِهِ مُعَافُى فِي جَسَدِهِ عِندَهُ قُوتُ يَوْمِهِ فَكَأَ نَمَا حِيزَتْ لَهُ الدُ نْيَا
+          </h1>
+
+          <p style="font-size: 0.9rem" class="px-2">
+          “Barangsiapa merasa aman di tempat tinggalnya, tubuhnya sehat dan mempunyai bekal makan hari itu, seolah-olah dunia telah ia kuasai dengan keseluruhannya“.
+
+          </p>
+
+          <span class="mb-0"><strong>Hadits Riwayat Tirmidzi</strong></span>
+        </div>
+      </div>
+
+      <!-- Ballon animation -->
+      <!-- <div class="position-relative">
+        <div class="position-absolute" style="top: 0%; left: 5%">
+          <svg
+            xmlns="https://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="currentColor"
+            class="opacity-50"
+            onload="util.animate(this, 4000, 'animate-love')"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+            ></path>
+          </svg>
+        </div>
+      </div> -->
+
+      <!-- Wave Separator -->
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#111111"
+          fill-opacity="1"
+          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+
+      <!-- Tanggal -->
+      <section class="dark-section" id="tanggal">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="font-esthetic py-3" style="font-size: 2rem">
+              Waktu Menuju Acara
+            </h1>
+            <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4">
+              <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
+              <div
+                class="row justify-content-center"
+                data-waktu="2024-01-29 21:00:00"
+                id="tampilan-waktu"
+              >
+                <div class="col-3 p-1">
+                  <h2 class="d-inline m-0 p-0" id="hari">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-inline">Hari</small>
+                </div>
+                <div class="col-3 p-1">
+                  <h2 class="d-inline m-0 p-0" id="jam">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-inline">Jam</small>
+                </div>
+                <div class="col-3 p-1">
+                  <h2 class="d-inline m-0 p-0" id="menit">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-inline">Menit</small>
+                </div>
+                <div class="col-3 p-1">
+                  <h2 class="d-inline m-0 p-0" id="detik">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-inline">Detik</small>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.9rem" class="mt-4 py-2">
+              Dengan semangat kebersamaan dan gotong royong, serta rasa saling menjaga antar seluruh warga,
+              maka marilah kita bersama-sama menyelenggarakan kegiatan ronda malam di lingkungan Rw 05.
+              Yang Insya Alloh akan dilaksanakan pada :
             </p>
-            <p>Untuk hadir dalam acara resepsi pernikahan kami.</p>
+
+            <!-- Love animation -->
+            <!-- <div class="position-relative">
+              <div class="position-absolute" style="top: 0%; right: 10%">
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  class="opacity-50"
+                  onload="util.animate(this, 3000, 'animate-love')"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  />
+                </svg>
+              </div>
+            </div> -->
+
+            <div class="overflow-x-hidden">
+              <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                <h1 class="font-esthetic" style="font-size: 2rem">Titik Kumpul</h1>
+                <p>Pukul 21.00 WIB - Selesai</p>
+                <p>Lokasi :</p>
+              </div>
+
+              <!-- <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                <h1 class="font-esthetic" style="font-size: 2rem">Resepsi</h1>
+                <p>Pukul 13.00 WIB - Selesai</p>
+              </div> -->
+            </div>
+
+            <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+              <!-- <a
+                href="https://goo.gl/maps/ALZR6FJZU3kxVwN86"
+                target="_blank"
+                class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3"
+              >
+                <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google
+                Maps
+              </a> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.8696198909955!2d107.73269651519962!3d-7.070389067206384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c16b5425c1a3%3A0x55b5a76471dde55a!2sKantor%20POS%20Dan%20Karang%20Taruna%20RW05%20Ciomas!5e0!3m2!1sid!2sid!4v1706500349290!5m2!1sid!2sid" 
+                width="300" height="250" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem">KANTOR RW 05</p>
+              <p>Ciomas Rt 01 Rw 05 Desa Neglasari Kec. Majalaya</p>
+   
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- couple -->
+      <!-- Love animation -->
+      <!-- <div class="position-relative">
+        <div class="position-absolute" style="top: 0%; left: 10%">
+          <svg
+            xmlns="https://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            fill="currentColor"
+            class="opacity-50"
+            onload="util.animate(this, 2000, 'animate-love')"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+            />
+          </svg>
+        </div>
+      </div> -->
 
-        <div class="row couple">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-8 text-end">
-                <h3>Nyai Emeh Suremeh</h3>
-                <p>
-                  Perempuan muda asal Jerman, yang merantau jauh hingga ke tanah
-                  abang.
-                </p>
-                <p>
-                  Bertemu dengan seorang petapa, dan kemudian dijadikan seorang
-                  yang sakti
-                </p>
+      <!-- Galeri Foto -->
+      <section class="dark-section" id="galeri">
+        <div class="container pb-2 pt-4">
+          <div class="card-body border rounded-4 shadow p-3">
+            <h1
+              class="font-esthetic text-center py-3"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              style="font-size: 2rem"
+            >
+              Galeri Kegiatan
+            </h1>
+
+            <div
+              id="carousel-foto-satu"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-satu"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-satu"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-satu"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <div class="col-4">
-                <img
-                  src="img/wanita.jpeg"
-                  alt="ayah Josh"
-                  class="img-responsive rounded-circle"
-                />
+
+              <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/ronda1.jpeg"
+                    alt="gambar 1"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/ronda2.jpeg"
+                    alt="gambar 2"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/ronda3.jpeg"
+                    alt="gambar 3"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
               </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-foto-satu"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-foto-satu"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div
+              id="carousel-foto-dua"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="carousel slide mt-4"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-dua"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-dua"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel-foto-dua"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/ronda4.jpeg"
+                    alt="gambar 4"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/ronda5.jpeg"
+                    alt="gambar 5"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/ronda6.jpeg"
+                    alt="gambar 6"
+                    class="d-block w-100"
+                    onclick="util.modal(this)"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-foto-dua"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-foto-dua"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-4">
-                <img
-                  src="img/pria.jpg"
-                  alt="ayah Josh"
-                  class="img-responsive rounded-circle"
-                />
-              </div>
-              <div class="col-8">
-                <h3>Ujang Sarkujang</h3>
-                <p>
-                  Seorang pria pengembara yang tersesat di hutan belantara, yang
-                  hilang arah dan tujuan tanpa punya uang.
-                </p>
-                <p>
-                  Akhirnya bertemu dengan kakek berilmu tinggi dan mempunyai
-                  pusaka sakti <span>"Sarung Kencana Sakti"</span>.
-                </p>
+      <!-- Wave Separator -->
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#111111"
+          fill-opacity="1"
+          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
+      </svg>
+
+      <!-- Hadiah -->
+      <div class="container" id="sarana">
+        <div class="py-4">
+          <div class="text-center">
+            <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem">
+              Peralatan
+            </h1>
+
+            <p class="mb-1" style="font-size: 0.9rem">
+              Sebagai sarana penunjang kegiatan (kalau ada),
+              Bawalah..
+            </p>
+
+            <div class="overflow-x-hidden">
+              <div class="row justify-content-center">
+                <div
+                  class="col-5 card-body border rounded-4 shadow p-4 m-3"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="assets/images/images.jpg"
+                    class="img-fluid w-50 rounded"
+                    alt="bni"
+                  />
+
+                  <p class="card-text mt-3 mb-0" style="font-size: 0.9rem">
+                  Dji Sam Soe
+                  </p>
+                  <!-- <p class="card-text" style="font-size: 0.9rem">
+                    a.n Lorem ipsum dolor
+                  </p> -->
+
+                  <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                  <!-- <button
+                    class="btn btn-light btn-sm rounded-3"
+                    data-nomer="123456789"
+                    onclick="util.salin(this)"
+                    autofocus
+                  >
+                    Salin No. Rekening
+                  </button> -->
+                </div>
+
+                <div
+                  class="col-5 card-body border rounded-4 shadow p-3 m-3"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="assets/images/kopi.png"
+                    class="img-fluid w-45 rounded"
+                    alt="bri"
+                  />
+
+                  <p class="card-text mt-3 mb-0" style="font-size: 0.9rem">
+                    Kopi Kapal Api
+                  </p>
+                  <!-- <p class="card-text" style="font-size: 0.9rem">
+                    a.n Lorem ipsum dolor
+                  </p> -->
+
+                  <!-- Ubah juga data-nomer sesuai dengan no rekening -->
+                  <!-- <button
+                    class="btn btn-light btn-sm rounded-3"
+                    data-nomer="123456789"
+                    onclick="util.salin(this)"
+                    autofocus
+                  >
+                    Salin No. Rekening
+                  </button> -->
+                </div>
               </div>
             </div>
-          </div>
-          <div class="akad">
-            <h5>Akad Nikah</h5>
-            <p>Tanggal 27 Desember 2023</p>
-            <p>pukul : 18.30 WIB</p>
-            <p>Di Mesjid Agung Majalaya Kab. Bandung</p>
           </div>
         </div>
       </div>
-      <a href="#story" class="btn btn-lg">Lihat Kisah Kami</a>
-    </section>
 
-    <div id="story" class="story">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Inilah Sekilas Cerita Kami</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
-              impedit id rem ipsa tenetur nulla.
-            </p>
+      <!-- Ucapan -->
+      <section class="m-0 p-0" id="ucapan" style="display: none;">
+        <div class="container">
+          <div class="card-body border rounded-4 shadow p-3">
+            <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem">
+              Ucapan & Doa
+            </h1>
+            <div class="mb-1" id="balasan"></div>
+
+            <div class="mb-3">
+              <label for="form-nama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control shadow-sm"
+                id="form-nama"
+                placeholder="Isikan Nama Anda"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label
+                for="form-kehadiran"
+                class="form-label"
+                id="label-kehadiran"
+                >Kehadiran</label
+              >
+              <select class="form-select shadow-sm" id="form-kehadiran">
+                <option value="0" selected>Konfirmasi Kehadiran</option>
+                <option value="1">Hadir</option>
+                <option value="2">Berhalangan</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="form-pesan" class="form-label">Ucapan & Doa</label>
+              <div
+                id="alertDiv"
+                class="alert alert-info alert-dismissible fade show"
+                role="alert"
+              >
+                <p style="font-size: 1.5rem">Bestieee!!!</p>
+                <p class="m-0">
+                  Sekarang bisa format text seperti whatsapp lohh... cobainn
+                  sekaranggg, makaciwww bestieee
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                  onclick="localStorage.setItem('alertClosed', 'true'); document.getElementById('alertDiv').style.display = 'none';"
+                ></button>
+              </div>
+              <textarea
+                class="form-control shadow-sm"
+                id="form-pesan"
+                rows="4"
+                placeholder="Tulis Ucapan & Doa"
+              ></textarea>
+            </div>
+
+            <div class="d-flex">
+              <button
+                class="flex-fill btn btn-danger btn-sm rounded-3 shadow m-1"
+                style="display: none"
+                onclick="comment.batal()"
+                id="batal"
+              >
+                Batal<i class="fa-solid fa-xmark ms-1"></i>
+              </button>
+              <button
+                class="flex-fill btn btn-success btn-sm rounded-3 shadow m-1"
+                style="display: none"
+                onclick="comment.balas()"
+                id="balas"
+              >
+                Balas<i class="fa-solid fa-reply ms-1"></i>
+              </button>
+              <button
+                class="flex-fill btn btn-warning btn-sm rounded-3 shadow m-1"
+                style="display: none"
+                onclick="comment.ubah()"
+                id="ubah"
+              >
+                Ubah<i class="fa-solid fa-pen-to-square ms-1"></i>
+              </button>
+              <button
+                class="flex-fill btn btn-primary btn-sm rounded-3 shadow m-1"
+                onclick="comment.kirim()"
+                id="kirim"
+              >
+                Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul class="timeline">
-              <li>
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/bg1.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <div class="content">
-                    <h3>Pertama Bertemu</h3>
-                    <span>1 januari 2000</span>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam volu Lorem ipsum
-                    </p>
-                  </div>
-                </div>
+
+          <div class="rounded-4 mt-4 mb-2" id="daftar-ucapan"></div>
+
+          <nav class="d-flex justify-content-center mb-0">
+            <ul class="pagination mb-0">
+              <li class="page-item disabled" id="previous">
+                <button
+                  class="page-link"
+                  onclick="pagination.previous(this)"
+                  aria-label="Sebelumnya"
+                >
+                  <i class="fa-solid fa-circle-left me-1"></i>Sebelumnya
+                </button>
               </li>
-              <li class="timeline-inverted">
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/bg2.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <h3>Ngabedug Macul</h3>
-                  <span>7 Oktober 2005</span>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Suscipit cum quia mollitia ipsum veritatis nostrum est unde?
-                  </p>
-                </div>
+              <li class="page-item disabled">
+                <span class="page-link text-light" id="page">1</span>
               </li>
-              <li>
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/bg1.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <div class="content">
-                    <h3>Ngala Pare di Haji Adang</h3>
-                    <span>10 Agustus 2008</span>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam volu Lorem ipsum
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/bg2.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <h3>Tunangan</h3>
-                  <span>15 januari 2010</span>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Suscipit cum quia mollitia ipsum veritatis nostrum est unde?
-                  </p>
-                </div>
+              <li class="page-item" id="next">
+                <button
+                  class="page-link"
+                  onclick="pagination.next(this)"
+                  aria-label="Selanjutnya"
+                >
+                  Selanjutnya<i class="fa-solid fa-circle-right ms-1"></i>
+                </button>
               </li>
             </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Wave Separator -->
+      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#111111"
+          fill-opacity="1"
+          d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </main>
+
+    <!-- Footer Undangan -->
+    <footer>
+      <div class="container">
+        <div class="text-center">
+          <p
+            style="font-size: 0.9rem"
+            class="pt-2 pb-1 px-2"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Merupakan suatu kehormatan dan kebanggan bagi kami, apabila Bapak/Saudara 
+            bisa hadir tepat waktu.
+            kami ucapkan terimakasih.
+          </p>
+
+          <h1 class="font-esthetic" data-aos="fade-up" data-aos-duration="2000">
+            Wassalamualaikum Warahmatullahi Wabarakatuh
+          </h1>
+          <h1
+            class="font-arabic py-4 px-2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            style="font-size: 2rem"
+          >
+            اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ
+          </h1>
+
+          <hr class="mt-3 mb-2" />
+
+          <div
+            class="row align-items-center justify-content-between flex-column flex-sm-row"
+          >
+            <div class="col-auto">
+              <small class="text-secondary">
+                &copy 2024 | Rw 05 | All reserver by joSh.
+              </small>
+            </div>
           </div>
         </div>
       </div>
-      <a href="#galery" class="btn btn-lg">Lihat Galeri Kami</a>
+    </footer>
+
+    <!-- Welcome Page -->
+    <div class="loading-page" id="welcome" style="opacity: 1;">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh !important"
+      >
+        <div class="text-center">
+          <h1 class="font-esthetic mb-4" style="font-size: 2.5rem">
+            Hayu Ngaronda
+           </h1>
+
+          <div
+            class="img-crop mb-4 mx-auto"
+          >
+            <img src="./assets/images/LOGORW5.png" alt="bg" style="width: 180px;" />
+          </div>
+
+          <h1 class="font-esthetic my-4" style="font-size: 2.3rem">
+            Biar Masyarakat Bahagia
+          </h1>
+          <div id="nama-tamu"></div>
+
+          <button
+            type="button"
+            class="btn btn-light shadow rounded-4 mt-4"
+            onclick="util.buka(this)"
+          >
+            <i class="fa-solid fa-envelope-open me-2"></i>Buka Undangan
+          </button>
+        </div>
+      </div>
     </div>
 
-    <section id="galery" class="galery">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>Memori kisah Kami</span>
-            <h2>Galery Kami</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
-              impedit id rem ipsa tenetur nulla.
-            </p>
-          </div>
-        </div>
+    <!-- Audio Button -->
+    <button
+      type="button"
+      id="tombol-musik"
+      style="display: none"
+      class="btn btn-light btn-sm rounded-circle btn-music"
+      onclick="util.music(this)"
+      data-status="true"
+      data-url="./assets/music/Lagu Maju Tak Gentar.mp3"
+    >
+      <i class="fa-solid fa-circle-pause spin-button"></i>
+    </button>
 
-        <div
-          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
-        >
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
+    <!-- Loading page -->
+    <div class="loading-page" id="loading" style="opacity: 1;">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh !important"
+      >
+        <div class="text-center w-75">
+          <img
+            class="img-fluid mb-3"
+            src="./assets/images/logo josh 2.png"
+            alt="icon"
+            style="width: 9rem"
+          />
+          <div class="progress" role="progressbar" style="height: 0.5rem">
+            <div class="progress-bar" id="bar" style="width: 0%"></div>
           </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
+          <small
+            class="mt-1 text-light"
+            id="progress-info"
+            style="display: none"
+            >Loading asset</small
+          >
+
+          <script>
+            document.getElementById("progress-info").style.display = "block";
+          </script>
+          <noscript>
+            <small class="mt-1 text-danger"
+              >Maaf, undangan ini perlu javascript</small
+            >
+          </noscript>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Foto Large -->
+    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="height: 100%"
             >
               <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
+                src="./assets/images/bg.jpeg"
+                class="w-100"
+                alt="foto"
+                id="show-modal-image"
               />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
-          </div>
-          <div class="col mt-3">
-            <a
-              href="img/galery/galery1.jpg"
-              data-toggle="lightbox"
-              data-caption="This describes the image"
-            >
-              <img
-                src="img/galery/thumbnail/thumbnail1.jpeg"
-                alt="nyai"
-                class="img-fluid w-100 rounded"
-              />
-            </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
+    <!-- Dependencies JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0="
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-
-    <script>
-      simplyCountdown(".simply-countdown", {
-        year: 2023, // required
-        month: 12, // required
-        day: 27, // required
-        hours: 8, // Default is 0 [0-23] integer
-        words: {
-          //words displayed into the countdown
-          days: { singular: "hari", plural: "hari" },
-          hours: { singular: "jam", plural: "jam" },
-          minutes: { singular: "menit", plural: "menit" },
-          seconds: { singular: "detik", plural: "detik" },
-        },
-      });
-    </script>
-
-    <script>
-      const hamburger = document.querySelector(".navbar-toggler");
-      const stickyTop = document.querySelector(".sticky-top");
-      const offcanvas = document.querySelector(".offcanvas");
-
-      offcanvas.addEventListener("show.bs.offcanvas", function () {
-        stickyTop.style.overflow = "visible";
-      });
-
-      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
-        stickyTop.style.overflow = "hidden";
-      });
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+      integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
+      integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
